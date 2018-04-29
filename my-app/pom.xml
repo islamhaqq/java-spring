@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.syedaman.app</groupId>
-  <artifactId>my-app</artifactId>
+  <artifactId>community-forum</artifactId>
   <version>0.1.0</version>
 
   <parent>
@@ -32,4 +32,27 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>spring-releases</id>
+      <url>https://repo.spring.io/libs-release</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
